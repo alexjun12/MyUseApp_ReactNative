@@ -2,13 +2,13 @@ import { useState,useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, ScrollView, Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { theme } from './colors';
 
+import { theme } from '../colors';
 import { Fontisto } from '@expo/vector-icons'; 
 
 const STORAGE_KEY="@toDos";
 
-export default function Todo({navigation}) {
+export default function Todo() {
   const [working, setWorking] = useState(true);
   const [text, setText] = useState("");
   const [toDos, setToDos] = useState({});
@@ -48,9 +48,6 @@ export default function Todo({navigation}) {
       }},
     ]);
     return;
-  }
-  const tapClick = () => {
-    navigation.navigate('WEATHER');
   }
   return (
     <View style={styles.container}>

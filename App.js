@@ -25,6 +25,8 @@ export default function App() {
                 break;
               case 'MAP':
                 iconName = focused ? 'map' : 'map';
+              default : 
+              iconName = 'trash';
             }
             return <Fontisto name={iconName} size={size} color={color} />;
           },

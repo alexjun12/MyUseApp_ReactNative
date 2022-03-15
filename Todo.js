@@ -56,9 +56,6 @@ export default function Todo({navigation}) {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.header}>
-        <TouchableOpacity onPress = {tapClick}>
-            <Fontisto name="trash" size={24} color="red" />
-        </TouchableOpacity>
         <TouchableOpacity onPress={work}>
           <Text style={{...styles.btnText, color: working ? theme.white : theme.grey}}>Work</Text>
         </TouchableOpacity>

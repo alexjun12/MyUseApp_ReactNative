@@ -25,6 +25,7 @@ export default function App() {
                 break;
               case 'MAP':
                 iconName = focused ? 'map' : 'map';
+                break;
               default : 
               iconName = 'trash';
             }

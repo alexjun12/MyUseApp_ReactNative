@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         height: Dimensions.get('window').height,
       },
     myLoc: {
-
     },
     input: {
         backgroundColor: "white",

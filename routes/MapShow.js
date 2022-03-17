@@ -6,8 +6,6 @@ import MapView from 'react-native-maps';
 import { Fontisto } from '@expo/vector-icons';
 import { theme } from '../colors';
 
-const { height:SCREEN_HEIGHT } = Dimensions.get("window");
-
 export default function MapShow() {
     return (
         <View style={styles.container}>
@@ -24,7 +22,7 @@ export default function MapShow() {
 const styles = StyleSheet.create({
     container: {
       flex:1,
-      backgroundColor:"magenta",
+      backgroundColor:theme.white,
     },
     map: {
         width: Dimensions.get('window').width,
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
     myLoc: {
     },
     input: {
-        backgroundColor: "white",
+        backgroundColor: theme.white,
         paddingVertical: 15,
         paddingHorizontal: 20,
         borderRadius: 30,
